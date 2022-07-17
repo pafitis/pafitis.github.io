@@ -77,7 +77,8 @@ body,button,input:not([type=file]),select,textarea{
     box-sizing:border-box
 }
 a{
-    text-decoration:underline
+    text-decoration:underline;
+    color: inherit
 }
 a:focus{
     outline:0
@@ -238,6 +239,33 @@ table{
     vertical-align:middle;
     width:100%
 }
+.tabs {
+    padding: 0;
+    text-align:right;
+    white-space:pre-wrap;
+}
+.tabs li {
+    color: inherit;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.tabs .current {
+    color: inherit;
+}
+.tab-content {
+    display: none;
+    /* background: #ededed; */
+    padding: 2px;
+}
+.tab-content.current {
+    display: inherit;
+}
+.tab-content.left {
+    display: inherit;
+    padding: 2px;
+    text-align:left;
+}
 .ir{
     display:block;
     text-indent:-999em;
@@ -364,8 +392,8 @@ h1:last-child,h2:last-child,h3:last-child,h4:last-child,h5:last-child,h6:last-ch
     margin-bottom:0
 }
 ul{
-    list-style-type:none;
-    margin:1rem 0;
+    /* list-style-type:none; */
+    margin:0;
     padding:0
 }
 ul:first-child{
